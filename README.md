@@ -1,6 +1,7 @@
 # test-webdriverio
 
 ```
-docker build -t test-webdriverio .
-docker run --rm -v $PWD/features:/root/features test-webdriverio
+docker run --rm -it -v $PWD:/app node:7.8.0-alpine /bin/sh
+cd app
+su node
 ```
